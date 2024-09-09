@@ -17,27 +17,17 @@
     </head>
     <body id="page-top">
         <!-- PWD-->
-        <center>
-         <input type="password" placeholder="passcode" id="pwd">
-         <button onclick="protectpasscode()"VSTOPI</button>
          <script>
-            function protectpasscode() {
-               const result = document.getElementById("pwd").value;
-               let passcode = Javornik_T_CV01;
-               let space = '';
-               if (result == space) {
-                  alert("Type passcode")
-               } else {
-                  if (result == passcode) {
-                     document.write("<center><h1>Pozdravljeni! </h1></center>");
-                  } else {
-                     alert("Napačno geslo, poskusite ponovno!");
-                     location.reload();
-                  }
-               }
+         var password = "tutorial";
+         (function passcodeprotect() {
+            var passcode = prompt("Enter PassCode");
+            while (passcode !== password) {
+               alert("Incorrect PassCode");
+               return passcodeprotect();
             }
+         }());
+         alert('Welcome To The TP..!');
          </script>
-      </center>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-image:linear-gradient(45deg, rgba(162,71,241,1) 0%, rgba(162,71,241,1) 25%, rgba(162,71,241,.85) 50%, rgba(162,71,241,.85) 75%, rgba(123,0,175,.6) 100%);" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
