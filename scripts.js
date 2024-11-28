@@ -6,7 +6,7 @@
 //
 // Scripts
 // 
-window.addEventListener('DOMContentLoaded' 'scroll', event => {
+window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
@@ -29,12 +29,4 @@ window.addEventListener('DOMContentLoaded' 'scroll', event => {
             }
         });
     });
-    const icon=document.getElementById("topico");
-    const triggerPoint=100;
-    if(window.scrollY>triggerPoint){
-        icon.style.display="block";
-    }   else{
-        icon.style.display="none";
-    }
-
 });
